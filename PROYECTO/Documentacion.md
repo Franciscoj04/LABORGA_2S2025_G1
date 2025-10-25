@@ -11,9 +11,9 @@
 
 
 <p align="center">
-  <strong>PRÁCTICA 3</strong>
+  <strong>PROYECTO FINAL</strong>
   <br>
-  <strong>Carrusel Automatizado con control de Acceso Seguro</strong>
+  <strong>Casa Inteligente con Control de Ambientes y Ventilador Automatizado</strong>
 </p>
 
 <br>
