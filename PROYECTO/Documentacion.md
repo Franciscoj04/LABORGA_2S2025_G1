@@ -1,10 +1,10 @@
-UNIVERSIDAD DE SAN CARLOS DE GUATEMALA
-FACULTAD DE INGENIERÍA
-ESCUELA DE CIENCIAS Y SISTEMAS
-ORGANIZACIÓN COMPUTACIONAL
-SEGUNDO SEMESTRE 2025
-ING. OTTO RENE ESCOBAR
-AUX: DILAN CONAHER SUY MIRANDA
+#### UNIVERSIDAD DE SAN CARLOS DE GUATEMALA
+#### FACULTAD DE INGENIERÍA
+#### ESCUELA DE CIENCIAS Y SISTEMAS
+#### ORGANIZACIÓN COMPUTACIONAL
+#### SEGUNDO SEMESTRE 2025
+#### ING. OTTO RENE ESCOBAR
+#### AUX: DILAN CONAHER SUY MIRANDA
 
 
  ![Logo USAC](img/Usac_logo.png)
@@ -183,16 +183,20 @@ Para implementar una memoria RAM (Random Access Memory) usando flip-flops tipo D
 ---
 # EQUIPO UTILIZADO Y PRESUPUESTO 
 ## PRESUPUESTO 
-| Cantidad | Componente        | Precio unitario (Q) | Precio total (Q) | Fuente                                                                 |
-|----------|-------------------|---------------------|------------------|------------------------------------------------------------------------|
-| 16       | LED Tricolor      | Q1.50               | Q24.00           | Estimado basado en precios promedio locales                            |
-| 3        | Protoboard 830    | Q38.00              | Q114.00          | [Electrónica DIY Guatemala](https://www.electronicadiy.com/products/protoboard-830) |
-| 80       | Jumper (MxM)      | Q0.80               | Q64.00           | Estimado basado en kits de 10 piezas por Q8.00                         |
-| 1        | Pantalla LCD 16x2 | Q33.00              | Q33.00           | [Electrónica DIY Guatemala](https://www.electronicadiy.com/products/pantalla-lcd-1602) |
-| 1        | Bluetooth HC-06   | Q60.00              | Q60.00           | [Electrónica DIY Guatemala](https://www.electronicadiy.com/products/bluetooth-hc-06) |
-| 1        | Arduino Uno       | Q95.00              | Q95.00           | Estimado basado en precios promedio locales                            |
-| 16       | Resistencia 330Ω  | Q0.50               | Q8.00            | Estimado basado en precios promedio locales                            |
-|          | **Total**         |                     | **Q398.00**      |                                                                        |
+## PRESUPUESTO
+
+| Cantidad | Componente | Precio unitario (Q) | Precio total (Q) | Fuente |
+| :--- | :--- | :--- | :--- | :--- |
+| 16 | LED Tricolor | Q1.50 | Q24.00 | Estimado basado en precios promedio locales |
+| 3 | Protoboard 830 | Q38.00 | Q114.00 | [Electrónica DIY Guatemala](https://www.electronicadiy.com/products/protoboard-830) |
+| 80 | Jumper (MxM) | Q0.80 | Q64.00 | Estimado basado en kits de 10 piezas por Q8.00 |
+| 1 | Pantalla LCD 16x2 | Q33.00 | Q33.00 | [Electrónica DIY Guatemala](https://www.electronicadiy.com/products/pantalla-lcd-1602) |
+| 1 | Bluetooth HC-06 | Q60.00 | Q60.00 | [Electrónica DIY Guatemala](https://www.electronicadiy.com/products/bluetooth-hc-06) |
+| 1 | Arduino Uno | Q95.00 | Q95.00 | Estimado basado en precios promedio locales |
+| 16 | Resistencia 330Ω | Q0.50 | Q8.00 | Estimado basado en precios promedio locales |
+| 1 | Cinta de aislar | Q30.00 | Q30.00 | Estimado basado en precios promedio locales |
+| 1 | Metro Termoencogible | Q3.00 | Q3.00 | Estimado basado en precios promedio locales |
+| | **Total** | | **Q431.00** | |
 
 # Conclusiones 
 1. Persistencia de Datos: Se implementó con éxito el almacenamiento de los modos de operación (escenas) en la memoria EEPROM interna del Arduino. Esto demostró ser una solución robusta que garantiza que el sistema recupere su configuración predefinida después de un corte de energía o un reinicio, cumpliendo con un requisito clave del proyecto.
@@ -204,6 +208,11 @@ Para implementar una memoria RAM (Random Access Memory) usando flip-flops tipo D
 1. Optimización de Escritura EEPROM: Para aumentar la vida útil de la memoria EEPROM (que tiene un número limitado de ciclos de escritura), se recomienda implementar una verificación antes de guardar. El Arduino debería primero leer la dirección de memoria y solo escribir el nuevo valor si es diferente al que ya está almacenado.
 2. Expandir el Parser .org: Se recomienda ampliar la flexibilidad del archivo .org. En lugar de solo definir modos fijos (fiesta, noche, etc.), se podría mejorar el parser para que el usuario defina los estados de cada ambiente individualmente (ej. sala:ON, cocina:OFF, ventilador:ON) y los asigne a un nombre de modo personalizado.
 3. Interfaz Gráfica Móvil: Aunque el uso de una terminal serial Bluetooth cumple con los requisitos, se recomienda desarrollar una aplicación móvil dedicada (por ejemplo, en MIT App Inventor o Android Studio). Esto mejoraría drásticamente la experiencia del usuario, reemplazando los comandos de texto  con botones gráficos e intuitivos.
+---
+# Anexos
+    Fotos reales de la maqueta 
+  ![casa frente](img/casa%20frente.jpg)
+  ![Diagrama de circuito p3](img/casa%20debtro.jpg)
 
 ## Código Fuente Comentado (.ino)
 
