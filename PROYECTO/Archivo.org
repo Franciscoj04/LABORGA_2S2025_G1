@@ -1,0 +1,25 @@
+Archivo de prueba para configuracion de modos
+conf_ini
+
+modo_fiesta
+LED'S: Alternandose 
+Ventilador: ON
+
+modo_relajado
+LED'S: ON 
+Ventilador: OFF
+
+modo_noche
+LED'S: OFF  LEDS ON
+Ventilador: OFF
+
+modo_encender_todo
+LED'S: ON
+Ventilador: ON
+
+modo_apagar_todo
+LED'S: OFF
+Ventilador: OFF
+
+conf:fin 
+
