@@ -181,11 +181,10 @@ Para implementar una memoria RAM (Random Access Memory) usando flip-flops tipo D
 ![Diagrama de circuito p3](img/CIRCUITO%201.png)
 
 ---
-# EQUIPO UTILIZADO Y PRESUPUESTO 
-## PRESUPUESTO 
-## PRESUPUESTO
+# EQUIPO UTILIZADO Y PRESUPUESTO  
+## PRESUPUESTO  
 
-| Cantidad | Componente | Precio unitario (Q) | Precio total (Q) | Fuente |
+| Cantidad | Componente / Material | Precio unitario (Q) | Precio total (Q) | Fuente |
 | :--- | :--- | :--- | :--- | :--- |
 | 16 | LED Tricolor | Q1.50 | Q24.00 | Estimado basado en precios promedio locales |
 | 3 | Protoboard 830 | Q38.00 | Q114.00 | [Electrónica DIY Guatemala](https://www.electronicadiy.com/products/protoboard-830) |
@@ -196,7 +195,17 @@ Para implementar una memoria RAM (Random Access Memory) usando flip-flops tipo D
 | 16 | Resistencia 330Ω | Q0.50 | Q8.00 | Estimado basado en precios promedio locales |
 | 1 | Cinta de aislar | Q30.00 | Q30.00 | Estimado basado en precios promedio locales |
 | 1 | Metro Termoencogible | Q3.00 | Q3.00 | Estimado basado en precios promedio locales |
-| | **Total** | | **Q431.00** | |
+| **—** | **Materiales para maqueta** | **—** | **—** | **—** |
+| 2 | Cartón espuma | Q20.00 | Q40.00 | Tienda de materiales de arte |
+| 4 | Papel tapiz para maqueta | Q7.00 | Q28.00 | Tienda de materiales para arquitectura |
+| 4 | Hojas de mueblería (escala 1:25) | Q10.00 | Q40.00 | Estimado basado en papelerías locales |
+| 1 | Silicón líquido | Q15.00 | Q15.00 | Tienda de manualidades |
+| 2 | Barras de silicón caliente | Q2.00 | Q4.00 | Tienda de ferretería |
+| 1 | Papel arcoíris negro | Q8.00 | Q8.00 | Papelería local |
+| 1 | Papel arcoíris con textura | Q8.00 | Q8.00 | Papelería local |
+| 1 | Hoja de acetato | Q4.00 | Q4.00 | Papelería local |
+| | **Total general** |  | **Q586.00** | |
+
 
 # Conclusiones 
 1. Persistencia de Datos: Se implementó con éxito el almacenamiento de los modos de operación (escenas) en la memoria EEPROM interna del Arduino. Esto demostró ser una solución robusta que garantiza que el sistema recupere su configuración predefinida después de un corte de energía o un reinicio, cumpliendo con un requisito clave del proyecto.
@@ -697,4 +706,36 @@ void parpadeoVerde() {//cuando hay error
     delay(500);
     digitalWrite(ledVerde, LOW);
 }
+
+```
+## Archivo de prueba (.org): conf_ini
+
+A continuación se coloca un archivo de prueba con extensión .org llamado `conf_ini`. Copie y pegue este bloque si desea cargarlo tal cual desde la PC hacia el Arduino.
+
+```org
+conf_ini
+
+modo_fiesta
+LED'S: Alternandose 
+Ventilador: ON
+
+modo_relajado
+LED'S: ON 
+Ventilador: OFF
+
+modo_noche
+LED'S: OFF 
+Ventilador: OFF
+
+modo_encender_todo
+LED'S: ON
+Ventilador: ON
+
+modo_apagar_todo
+LED'S: OFF
+Ventilador: OFF
+
+conf:fin
+```
+
 
